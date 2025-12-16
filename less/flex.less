@@ -1,0 +1,142 @@
+@import "variables.less";
+@import "mixins.less";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  font-family: @font-main;
+  font-size: 16px;
+  line-height: 24px;
+  background: @color-bg;
+  color: @color-text;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: @container-padding;
+  padding-right: @container-padding;
+
+  @media (min-width: @break-sm) {
+    width: 750px;
+  }
+  @media (min-width: @break-md) {
+    width: 970px;
+  }
+  @media (min-width: @break-lg) {
+    width: 1170px;
+  }
+}
+
+.row {
+  .flex-row(flex-start, stretch, wrap);
+  margin-left: -@container-padding;
+  margin-right: -@container-padding;
+}
+
+.row-header {
+  .flex-row(center, center, wrap);
+  margin-left: -@container-padding;
+  margin-right: -@container-padding;
+}
+
+[class^="col-"],
+[class*=" col-"] {
+  padding-left: @container-padding;
+  padding-right: @container-padding;
+}
+
+.col-xs-12 {
+  .flex-col(100%, 0, 0);
+  max-width: 100%;
+}
+
+@media (min-width: @break-sm) {
+  .col-sm-12 {
+    .flex-col(100%, 0, 0);
+    max-width: 100%;
+  }
+
+  .col-sm-8 {
+    .flex-col(66.6667%, 0, 0);
+    max-width: 66.6667%;
+  }
+
+  .col-sm-6 {
+    .flex-col(50%, 0, 0);
+    max-width: 50%;
+  }
+
+  .col-sm-4 {
+    .flex-col(33.3333%, 0, 0);
+    max-width: 33.3333%;
+  }
+}
+
+@media (min-width: @break-md) {
+  .col-md-12 {
+    .flex-col(100%, 0, 0);
+    max-width: 100%;
+  }
+
+  .col-md-8 {
+    .flex-col(66.6667%, 0, 0);
+    max-width: 66.6667%;
+  }
+
+  .col-md-6 {
+    .flex-col(50%, 0, 0);
+    max-width: 50%;
+  }
+
+  .col-md-4 {
+    .flex-col(33.3333%, 0, 0);
+    max-width: 33.3333%;
+  }
+}
+
+@media (min-width: @break-lg) {
+  .col-lg-12 {
+    .flex-col(100%, 0, 0);
+    max-width: 100%;
+  }
+
+  .col-lg-8 {
+    .flex-col(66.6667%, 0, 0);
+    max-width: 66.6667%;
+  }
+
+  .col-lg-7 {
+    .flex-col(58.3333%, 0, 0);
+    max-width: 58.3333%;
+  }
+
+  .col-lg-6 {
+    .flex-col(50%, 0, 0);
+    max-width: 50%;
+  }
+
+  .col-lg-5 {
+    .flex-col(41.6667%, 0, 0);
+    max-width: 41.6667%;
+  }
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}

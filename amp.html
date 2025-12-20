@@ -1,0 +1,1503 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>InkTattoo</title>
+
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <link rel="canonical" href="https://ib133.github.io/tattoo/">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700'
+          rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+    <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+    <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+    
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both
+        }
+
+        @-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+
+        @-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+
+        @-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+
+        @-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+
+        @keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+    </style>
+    <noscript>
+        <style amp-boilerplate>
+            body {
+                -webkit-animation: none;
+                -moz-animation: none;
+                -ms-animation: none;
+                animation: none
+            }
+        </style>
+    </noscript>
+    
+    <style amp-custom>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Roboto:wght@300;400;700&display=swap');
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Oswald', sans-serif;
+        }
+        
+        .testimonials {
+            background: #2c3e50;
+            color: #ecf0f1;
+        }
+        
+        .testimonials h2 {
+            color: #ecf0f1;
+            font-weight: 400;
+        }
+        
+        .testimonials span {
+            color: #bdc3c7;
+        }
+        
+        .twitter {
+            background: #e74c3c;
+        }
+        
+        .twitter h4 {
+            color: white;
+        }
+        
+        .contact {
+            background: #34495e;
+            color: #ecf0f1;
+        }
+        
+        .contact h2, .contact h3 {
+            color: white;
+        }
+        
+        .contact p, .contact span {
+            color: #bdc3c7;
+        }
+        
+        .contact strong {
+            color: white;
+        }
+        
+        .social a {
+            color: #ecf0f1;
+        }
+        
+        .contact input[type="text"],
+        .contact textarea {
+            background: #2c3e50;
+            border: 1px solid #4a6572;
+            color: #ecf0f1;
+        }
+        
+        .contact input[type="text"]::placeholder,
+        .contact textarea::placeholder {
+            color: #95a5a6;
+        }
+        
+        .send {
+            background: #e74c3c;
+            color: white;
+        }
+        
+        footer {
+            background: #1a252f;
+        }
+        
+        footer p {
+            color: #7f8c8d;
+        }
+
+        * {
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  margin: 0;
+  font-family: "Times New Roman", Times, Cambria, "Hoefler Text", "Liberation Serif", serif;
+  font-size: 16px;
+  line-height: 24px;
+  background: #f2efe5;
+  color: #000;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.row-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+[class^="col-"],
+[class*=" col-"] {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.col-xs-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+@media (min-width: 768px) {
+  .col-sm-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .col-sm-8 {
+    flex: 0 0 66.6667%;
+    max-width: 66.6667%;
+  }
+  .col-sm-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col-sm-4 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+}
+@media (min-width: 992px) {
+  .col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .col-md-8 {
+    flex: 0 0 66.6667%;
+    max-width: 66.6667%;
+  }
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col-md-4 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+}
+@media (min-width: 1200px) {
+  .col-lg-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .col-lg-8 {
+    flex: 0 0 66.6667%;
+    max-width: 66.6667%;
+  }
+  .col-lg-7 {
+    flex: 0 0 58.3333%;
+    max-width: 58.3333%;
+  }
+  .col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col-lg-5 {
+    flex: 0 0 41.6667%;
+    max-width: 41.6667%;
+  }
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  font-family: "Times New Roman", Times, Cambria, "Hoefler Text", "Liberation Serif", serif;
+  font-size: 16px;
+  line-height: 24px;
+  background: #f2efe5;
+  color: #000;
+  font-weight: 400;
+}
+header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 9997;
+  padding-top: 25px;
+}
+.titledata,
+.titledata-f {
+  max-width: 777px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.titledata-f {
+  padding-bottom: 80px;
+}
+ul.leftside,
+ul.leftside-f {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+ul.leftside li,
+ul.leftside-f li {
+  display: inline-block;
+  margin: 0 10px;
+}
+ul.leftside li a,
+ul.leftside-f li a {
+  color: #1a1a1a;
+  font-size: 12px;
+  line-height: 23px;
+  letter-spacing: -0.15px;
+  display: block;
+}
+ul.leftside li a:hover,
+ul.leftside-f li a:hover {
+  border-bottom: 2px solid #1a1a1a;
+}
+.logo,
+.logo-f {
+  margin: 0 40px;
+}
+.banner {
+  background-image: url(./images/main.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 500px;
+  position: relative;
+}
+.about {
+  min-height: 504px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.abtleft {
+  flex: 0 0 50%;
+}
+.insideimg {
+  background-image: url(./images/tattoo.jpeg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 205px 0;
+  text-align: center;
+}
+.insideimg h2 {
+  border: 10px solid #000;
+  padding: 24px 45px;
+  font-size: 36px;
+  font-weight: 700;
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+}
+.abttitledata {
+  max-width: 644px;
+  width: 100%;
+  padding: 95px 0 95px 80px;
+  text-align: center;
+}
+.abttitledata h4 {
+  margin: 28px 0;
+  font-size: 18px;
+}
+.abttitledata p {
+  text-align: left;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.width20 {
+  position: relative;
+  flex: 0 0 16.66%;
+}
+.width20 img {
+  width: 100%;
+  height: auto;
+}
+.width20 .imgDescription2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(204, 200, 182, 0.7);
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  padding: 115px 0;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.width20:hover .imgDescription2 {
+  visibility: visible;
+  opacity: 1;
+}
+.testimonials {
+  background-image: url(./images/twit.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 115px 0 55px;
+  color: #f2efe5;
+}
+.testimonials h2 {
+  font-size: 24px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}
+.testimonials i {
+  font-size: 50px;
+}
+.testimonials p.arrowleftside {
+  position: relative;
+  left: -50px;
+}
+.testimonials span {
+  text-align: right;
+  text-transform: uppercase;
+  display: block;
+  margin: 20px 100px 0 0;
+}
+.testimonials .row {
+  justify-content: center;
+}
+.teammain {
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.team {
+  flex: 0 0 33.33%;
+  height: 500px;
+}
+.team img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.titleteam {
+  background-image: url(./images/tattoo.jpeg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 192px 0;
+  text-align: center;
+  min-height: 500px;
+}
+.titleteam h2 {
+  border: 10px solid #000;
+  padding: 24px 45px;
+  font-size: 36px;
+  font-weight: 700;
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+}
+.teaminfo {
+  padding: 120px 50px 0;
+  background: #ccc8b6;
+  min-height: 500px;
+  position: relative;
+}
+.teaminfo::after {
+  right: 100%;
+  top: 25%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(204, 200, 182, 0);
+  border-right-color: #ccc8b6;
+  border-width: 20px;
+  margin-top: -20px;
+}
+.teaminfo h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 45px;
+}
+.teaminfo p {
+  font-size: 14px;
+  letter-spacing: -0.1px;
+  margin-bottom: 30px;
+}
+.teaminfo i {
+  margin-right: 30px;
+  font-size: 35px;
+  color: #000;
+}
+.teaminfo i:hover {
+  color: #3ac9e8;
+  transition: all 0.5s;
+}
+.newletter {
+  min-height: 500px;
+  background: #e2dfd6;
+  padding: 150px 100px 0;
+}
+.newletter h3 {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.newletter p {
+  font-size: 12px;
+  line-height: 12px;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+}
+.newletter input {
+  max-width: 300px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 8px 15px;
+  border: 1px solid #000;
+  background: none;
+  outline: 0;
+}
+.newletter input:focus {
+  border: 1px solid #9a977a;
+  box-shadow: 1px 0 4px 2px rgba(154, 151, 122, 0.5);
+}
+.newletter input[type="submit"] {
+  background: #9a977a;
+  text-align: center;
+  color: #fff;
+  border: 1px solid #9a977a;
+  font-size: 12px;
+}
+.newletter input[type="submit"]:hover {
+  background: #333;
+  transition: all 0.5s;
+}
+.twitter {
+  background-image: url(./images/twit.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 350px;
+  padding: 110px 0;
+  text-align: center;
+}
+.twitter a i {
+  font-size: 48px;
+  color: #ccc8b6;
+}
+.twitter h4 {
+  text-align: left;
+  font-size: 22px;
+  color: #f2efe5;
+  margin-top: 30px;
+}
+.gallerytitle {
+  flex: 0 0 40%;
+  background: #afac9c;
+  text-align: center;
+  align-content: center;
+  padding: 0;
+}
+.gallerytitle h2 {
+  border: 10px solid #000;
+  padding: 24px 45px;
+  font-size: 36px;
+  font-weight: 700;
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+}
+.width5 {
+  flex: 0 0 20%;
+  position: relative;
+}
+.width5 img {
+  width: 100%;
+  display: block;
+}
+.width5 .imgDescription {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(204, 200, 182, 0.5);
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  padding: 115px 0;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.width5:hover .imgDescription {
+  visibility: visible;
+  opacity: 1;
+}
+.contact {
+  padding: 180px 0 150px;
+  background: #e7e5d0;
+}
+.contact h2 {
+  border: 10px solid #000;
+  padding: 24px 20px;
+  font-size: 36px;
+  font-weight: 700;
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+}
+.contact p {
+  text-align: center;
+  margin: 70px 0;
+  font-size: 18px;
+}
+.contact h3 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.contact span {
+  display: block;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.contact span strong {
+  font-weight: 700;
+}
+.contact .social {
+  text-align: center;
+  margin-top: 80px;
+}
+.contact .social a i {
+  font-size: 36px;
+  color: #000;
+  margin-right: 30px;
+}
+.contact .social a i:hover {
+  color: #3ac9e8;
+  transition: all 0.5s;
+}
+.contact input,
+.contact textarea {
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 15px 15px;
+  border: 2px solid #000;
+  background: none;
+  outline: 0;
+}
+.contact input:focus,
+.contact textarea:focus {
+  border: 1px solid #9a977a;
+  box-shadow: 1px 0 4px 2px rgba(154, 151, 122, 0.5);
+}
+.contact textarea {
+  height: 215px;
+}
+.contact a.send {
+  background: #9a977a;
+  width: 75%;
+  display: block;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+.contact a.send:hover {
+  background: #333;
+  transition: all 0.5s;
+}
+footer {
+  text-align: center;
+  background: #aeaeae;
+  padding: 170px 0 65px;
+}
+footer p,
+footer p a {
+  font-size: 14px;
+  color: #333;
+}
+footer p a:hover {
+  text-decoration: underline;
+}
+@media only screen and (min-width: 1201px) and (max-width: 1500px) {
+  .team img {
+    height: 500px;
+  }
+  .teaminfo {
+    padding: 95px 50px 0;
+  }
+  .gallerytitle {
+    min-height: 200px;
+    padding: 0;
+  }
+  .width5 img {
+    width: 100%;
+    height: 200px;
+  }
+  .imgDescription {
+    padding: 55px 0;
+  }
+  .imgDescription a i {
+    margin: 0 10px;
+  }
+}
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
+  .abttitledata {
+    padding: 70px 15px 10px;
+  }
+  .imgDescription2 {
+    padding: 20px 0;
+  }
+  .imgDescription2 a i {
+    margin: 0 7px;
+  }
+  p.arrowleftside {
+    left: 0;
+  }
+  .team {
+    height: 330px;
+  }
+  .titleteam {
+    padding: 116px 0;
+    min-height: 334px;
+  }
+  .teaminfo {
+    padding: 10px 15px 0;
+    min-height: 330px;
+  }
+  .teaminfo h3 {
+    margin-bottom: 10px;
+  }
+  .teaminfo p {
+    margin-bottom: 15px;
+  }
+  .teaminfo i {
+    margin-right: 20px;
+    font-size: 31px;
+  }
+  .newletter {
+    min-height: 330px;
+    padding: 79px 30px 0;
+  }
+  .team img {
+    height: 330px;
+  }
+  .gallerytitle {
+    min-height: 200px;
+    padding: 0;
+  }
+  .width5 img {
+    width: 100%;
+    height: 200px;
+  }
+  .imgDescription {
+    padding: 55px 0;
+  }
+  .imgDescription a i {
+    margin: 0 10px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .logo,
+  .logo-f {
+    margin: 0 20px;
+  }
+  .banner {
+    min-height: 380px;
+  }
+  .insideimg {
+    padding: 100px 0;
+  }
+  .about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+  .abtleft {
+    flex: 0 0 100%;
+  }
+  .abttitledata {
+    max-width: 100%;
+    width: 100%;
+    padding: 50px;
+  }
+  .width20 {
+    flex: 0 0 33.33%;
+  }
+  p.arrowleftside {
+    left: 0;
+  }
+  .testimonials {
+    padding: 55px 0 55px;
+  }
+  .team {
+    flex: 0 0 100%;
+    height: auto;
+  }
+  .titleteam {
+    background-position: top center;
+    padding: 70px 0;
+    min-height: auto;
+  }
+  .team img {
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .teaminfo {
+    padding: 55px 53px;
+    min-height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .teaminfo::after {
+    right: auto;
+    top: auto;
+    margin-top: 0;
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(204, 200, 182, 0);
+    border-bottom-color: #ccc8b6;
+    border-width: 30px;
+    margin-left: -30px;
+  }
+  .newletter {
+    min-height: auto;
+    padding: 40px 80px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .gallerytitle {
+    flex: 0 0 100%;
+    min-height: auto;
+    padding: 40px 0;
+  }
+  .width5 {
+    flex: 0 0 33.33%;
+  }
+  .contact {
+    padding: 50px 0 50px;
+  }
+  .contact p {
+    margin: 33px 0;
+    font-size: 17px;
+  }
+  footer {
+    padding: 50px 0;
+  }
+  .titledata-f {
+    padding-bottom: 35px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  p.arrowleftside {
+    left: 0;
+  }
+  ul.leftside,
+  ul.leftside-f {
+    margin-top: 0;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo,
+  .logo-f {
+    margin: 0;
+    text-align: center;
+  }
+  .logo amp-img,
+  .logo-f amp-img {
+    width: 200px;
+    height: auto;
+    margin: 10px auto;
+  }
+  .banner {
+    min-height: 215px;
+  }
+  .insideimg {
+    padding: 45px 0;
+  }
+  .about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+  .abtleft {
+    flex: 0 0 100%;
+  }
+  .abttitledata {
+    max-width: 100%;
+    width: 100%;
+    padding: 15px;
+  }
+  .width20 {
+    flex: 0 0 100%;
+  }
+  .testimonials {
+    padding: 50px 0;
+  }
+  .testimonials span {
+    margin: 0;
+  }
+  .testimonials h2 {
+    font-size: 18px;
+  }
+  .team {
+    flex: 0 0 100%;
+    height: auto;
+  }
+  .titleteam {
+    background-position: top center;
+    padding: 70px 0;
+    min-height: auto;
+  }
+  .team img {
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .teaminfo {
+    padding: 25px 15px;
+    min-height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .teaminfo::after {
+    right: auto;
+    top: auto;
+    margin-top: 0;
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(204, 200, 182, 0);
+    border-bottom-color: #ccc8b6;
+    border-width: 30px;
+    margin-left: -30px;
+  }
+  .newletter {
+    min-height: auto;
+    padding: 25px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .newletter h3 {
+    margin-bottom: 20px;
+  }
+  .teaminfo i {
+    margin-right: 22px;
+    font-size: 26px;
+  }
+  .twitter {
+    min-height: auto;
+    padding: 35px 0;
+  }
+  .gallerytitle {
+    flex: 0 0 100%;
+    min-height: auto;
+    padding: 40px 0;
+  }
+  .width5 {
+    flex: 0 0 100%;
+  }
+  .contact {
+    padding: 50px 0 50px;
+  }
+  .contact h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .contact p {
+    margin: 33px 0;
+    font-size: 17px;
+  }
+  .social {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .social a i {
+    font-size: 30px;
+    margin-right: 17px;
+  }
+  footer {
+    padding: 50px 0;
+  }
+  .titledata-f {
+    padding-bottom: 35px;
+  }
+}
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="row-header">
+            <div class="col-lg-12">
+                <div class="titledata clearfix">
+                    <ul class="leftside">
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#gallery">GALLERY</a></li>
+                    </ul>
+                    <div class="logo"><amp-img layout="responsive" src="images/logo.png" alt="" height="137" width="280"></amp-img></div>
+                    <ul class="leftside">
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#">FIND US</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="banner" id="home"></div>
+    <div class="about" id="about">
+        <div class="abtleft">
+            <div class="insideimg"><h2 class="">ABOUT US</h2></div>
+        </div>
+        <div class="abtleft">
+            <div class="abttitledata">
+                <h4>
+                    Aliquam ac justo interdum, elementum ligula et, condimentum orci. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit.
+                </h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc risus eros, ultricies quis erat sit
+                    amet,
+                    elementum vulputate lorem. Sed at lacinia lectus, quis blandit libero.
+                    <br><br>
+                    Quisque ac malesuada lectus. Proin gravida feugiat commodo. Phasellus fermentum sem ut felis
+                    vehicula
+                    aliquet. Donec rhoncus, mi et euismod dictum, purus lorem vehicula justo, a iaculis mi nulla et
+                    risus.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery clearfix" id="gallery">
+        <div class="width20">
+            <amp-img layout="responsive" height="100" width="100" src="images/stub.jpg" alt="">
+            <div class="imgDescription2"></div>
+        </div>
+        <div class="width20">
+            <amp-img layout="responsive" height="100" width="100" src="images/stub.jpg" alt="">
+            <div class="imgDescription2"></div>
+        </div>
+        <div class="width20">
+            <amp-img layout="responsive" height="100" width="100" src="images/stub.jpg" alt="">
+            <div class="imgDescription2"></div>
+        </div>
+        <div class="width20">
+            <amp-img layout="responsive" height="100" width="100" src="images/stub.jpg" alt="">
+            <div class="imgDescription2"></div>
+        </div>
+        <div class="width20">
+            <amp-img layout="responsive" height="100" width="100" src="images/stub.jpg" alt="">
+            <div class="imgDescription2"></div>
+        </div>
+        <div class="width20">
+            <amp-img layout="responsive" height="100" width="100" src="images/stub.jpg" alt="">
+            <div class="imgDescription2"></div>
+        </div>
+        <div class="width20">
+            <amp-img layout="responsive" height="100" width="100" src="images/stub.jpg" alt="">
+            <div class="imgDescription2"></div>
+        </div>
+        <div class="width20">
+            <amp-img layout="responsive" height="100" width="100" src="images/stub.jpg" alt="">
+            <div class="imgDescription2"></div>
+        </div>
+        <div class="width20">
+            <amp-img layout="responsive" height="100" width="100" src="images/stub.jpg" alt="">
+            <div class="imgDescription2"></div>
+        </div>
+        <div class="width20">
+            <amp-img layout="responsive" height="100" width="100" src="images/stub.jpg" alt="">
+            <div class="imgDescription2"></div>
+        </div>
+        <div class="width20">
+            <amp-img layout="responsive" height="100" width="100" src="images/stub.jpg" alt="">
+            <div class="imgDescription2"></div>
+        </div>
+        <div class="width20">
+            <amp-img layout="responsive" height="100" width="100" src="images/stub.jpg" alt="">
+            <div class="imgDescription2"></div>
+        </div>
+    </div>
+
+    <div class="testimonials clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-push-2 col-lg-pull-2 col-md-12 col-sm-12">
+                    <p class="arrowleftside">
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    </p>
+                    <h2>
+                        Aliquam ac justo interdum, elementum ligula et, condimentum orci. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                    </h2>
+                    <p style="text-align:right;">
+                        <i class="fa fa-quote-right" aria-hidden="true"></i>
+                    </p>
+                    <span>- john doe -</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="teammain clearfix" id="faq">
+        <div class="team">
+            <div class="titleteam">
+                <h2>TEAM</h2>
+            </div>
+        </div>
+        <div class="team">
+            <amp-img layout="responsive" height="100" width="100" src="images/stub.jpg" alt="">
+        </div>
+        <div class="team">
+            <div class="teaminfo">
+                <h3>Corey Miller</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc risus eros, ultricies quis erat sit
+                    amet,
+                    elementum vulputate lorem. Sed at lacinia lectus, quis blandit libero.<br>
+                    Quisque ac malesuada lectus. Proin gravida feugiat commodo. Phasellus fermentum sem ut felis
+                    vehicula
+                    aliquet. Donec rhoncus, mi et euismod dictum, purus lorem vehicula justo, a iaculis mi nulla et
+                    risus.
+                </p>
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-tumblr" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="team">
+            <amp-img layout="responsive" height="100" width="100" src="images/stub.jpg" alt="">
+        </div>
+        <div class="team">
+            <div class="teaminfo">
+                <h3>Kat Von D</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc risus eros, ultricies quis erat sit
+                    amet,
+                    elementum vulputate lorem. Sed at lacinia lectus, quis blandit libero.<br>
+                    Quisque ac malesuada lectus. Proin gravida feugiat commodo. Phasellus fermentum sem ut felis
+                    vehicula
+                    aliquet. Donec rhoncus, mi et euismod dictum, purus lorem vehicula justo, a iaculis mi nulla et
+                    risus.
+                </p>
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-tumblr" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="team">
+            <div class="newletter">
+                <h3>Newsletter</h3>
+                <p>Join thousands of other <br>people subscribe to our news</p>
+                <input type="text" name="Email" placeholder="INSERT EMAIL">
+                <input type="submit" value="SUBMIT">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="twitter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <h4>RT @collis: Trade growth ideas with other founders. Look for ways to cross promote. Small
+                        startups
+                        today may be big friends later. (9/10) 2 days ago</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery clearfix">
+        <div class="gallerytitle">
+            <h2>GALLERY</h2>
+        </div>
+        <div class="width5">
+            <amp-img layout="responsive" height="100" width="100" src="images/stub.jpg" alt="">
+            <div class="imgDescription"></div>
+        </div>
+        <div class="width5">
+            <amp-img layout="responsive" height="100" width="100" src="images/stub.jpg" alt="">
+            <div class="imgDescription"></div>
+        </div>
+        <div class="width5">
+            <amp-img layout="responsive" height="100" width="100" src="images/stub.jpg" alt="">
+            <div class="imgDescription"></div>
+        </div>
+        <div class="width5">
+            <amp-img layout="responsive" height="100" width="100" src="images/stub.jpg" alt="">
+            <div class="imgDescription"></div>
+        </div>
+        <div class="width5">
+            <amp-img layout="responsive" height="100" width="100" src="images/stub.jpg" alt="">
+            <div class="imgDescription"></div>
+        </div>
+        <div class="width5">
+            <amp-img layout="responsive" height="100" width="100" src="images/stub.jpg" alt="">
+            <div class="imgDescription"></div>
+        </div>
+        <div class="width5">
+            <amp-img layout="responsive" height="100" width="100" src="images/stub.jpg" alt="">
+            <div class="imgDescription"></div>
+        </div>
+        <div class="width5">
+            <amp-img layout="responsive" height="100" width="100" src="images/stub.jpg" alt="">
+            <div class="imgDescription"></div>
+        </div>
+        <div class="width5">
+            <amp-img layout="responsive" height="100" width="100" src="images/stub.jpg" alt="">
+            <div class="imgDescription"></div>
+        </div>
+        <div class="width5">
+            <amp-img layout="responsive" height="100" width="100" src="images/stub.jpg" alt="">
+            <div class="imgDescription"></div>
+        </div>
+        <div class="width5">
+            <amp-img layout="responsive" height="100" width="100" src="images/stub.jpg" alt="">
+            <div class="imgDescription"></div>
+        </div>
+        <div class="width5">
+            <amp-img layout="responsive" height="100" width="100" src="images/stub.jpg" alt="">
+            <div class="imgDescription"></div>
+        </div>
+        <div class="width5">
+            <amp-img layout="responsive" height="100" width="100" src="images/stub.jpg" alt="">
+            <div class="imgDescription"></div>
+        </div>
+        <div class="width5">
+            <amp-img layout="responsive" height="100" width="100" src="images/stub.jpg" alt="">
+            <div class="imgDescription"></div>
+        </div>
+        <div class="width5">
+            <amp-img layout="responsive" height="100" width="100" src="images/stub.jpg" alt="">
+            <div class="imgDescription"></div>
+        </div>
+        <div class="width5">
+            <amp-img layout="responsive" height="100" width="100" src="images/stub.jpg" alt="">
+            <div class="imgDescription"></div>
+        </div>
+        <div class="width5">
+            <amp-img layout="responsive" height="100" width="100" src="images/stub.jpg" alt="">
+            <div class="imgDescription"></div>
+        </div>
+        <div class="width5">
+            <amp-img layout="responsive" height="100" width="100" src="images/stub.jpg" alt="">
+            <div class="imgDescription"></div>
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-8 col-sm-8">
+                    <h2>CONTACT US</h2>
+                    <p>Aliquam ac justo
+                        interdum, elementum ligula et, condimentum orci.<br> Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit.</p>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <h3>INFO:</h3>
+
+                            <span>hone : + <strong>123-456-789-456</strong></span>
+                            <span>Fax: + <strong>123-456-789-456</strong></span>
+                            <span>Email : <strong>info@inktattoo.net</strong></span>
+                            <span>Adress : <strong>1234 Street Road, City Name</strong></span>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <h3>WORK HOURS:</h3>
+
+                            <span>Monday - Friday : <strong>09am - 18pm</strong></span>
+                            <span>Saturday : <strong>09am - 1pm</strong></span>
+                            <span>Sunday : <strong>closed</strong></span>
+                        </div>
+                    </div>
+                    <div class="social clearfix">
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-tumblr" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                    </div>
+
+                </div>
+                <div class="col-lg-5 col-md-4 col-sm-4">
+                    <input type="text" name="FULL NAME" placeholder="FULL NAME">
+                    <input type="text" name="Email" placeholder="EMAIL">
+                    <textarea placeholder="MESSAGE"></textarea>
+                    <a href="#" class="send">SEND</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="row-header">
+            <div class="col-lg-12">
+                <div class="titledata-f clearfix">
+                    <ul class="leftside-f">
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#gallery">GALLERY</a></li>
+                    </ul>
+                    <div class="logo-f">
+                        <a href="#"><amp-img layout="responsive" height="100" width="100" src="images/logo.png" alt=""></a>
+                    </div>
+                    <ul class="leftside-f">
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#">FIND US</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+
+                <p>2014 InkTattoo. All rights reserved - Designed by theuncreativelab.com</p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
